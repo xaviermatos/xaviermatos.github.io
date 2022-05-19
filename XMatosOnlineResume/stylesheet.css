@@ -1,0 +1,252 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    color: white !important;
+	font-family: 'Lato', sans-serif !important;
+	background-color: black !important;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	padding: 10px;
+}
+
+main {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+header {
+	width: 100% !important;
+	height: 100px !important;
+	margin-bottom: -40px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+footer {
+	text-align: center;
+}
+
+.navbar-default {
+	color: white !important;
+	border-color: black !important;
+	margin: 0;
+	padding: 0;
+	border: 0 !important;
+	margin-bottom: 0 !important;
+	background-color: black !important;
+}
+
+.navbar-default .navbar-brand {
+	color: white !important;
+	padding: 32px;
+	padding-bottom: 52px;
+}
+
+@media (min-width: 750px) {
+	.navbar-nav.navbar-center {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+a {
+	color: white !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+a:hover {
+	color: white !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+a:focus {
+	color: white !important;
+}
+
+.site-title a,
+.site-description {
+	color: white !important;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	color: white !important;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: white !important;
+	background: rgba(50, 50, 50, 0.9) !important;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	color: white !important;
+	background: rgba(50, 50, 50, 0.9) !important;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: white !important;
+	background: rgba(50, 50, 50, 0.9) !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white !important;
+	padding: 32px;
+}
+
+.site-title a,
+.site-description {
+	color: white !important;
+}
+
+.navbar {
+	border: 0;
+	margin 0;
+}
+
+.navbar-default .navbar-toggle:focus {
+	background-color: white !important;
+}
+
+.p1 {
+	font-size: 45px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	padding-bottom: 20px;
+
+}
+
+b,
+strong {
+	color: white !important;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	padding: 32px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	padding: 32px;
+}
+
+.navbar-default .navbar-toggle {
+	padding: 20px;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+	background-color: black !important;
+	color: white !important;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 27%, rgba(0, 0, 0, 1) 39%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 1) 76%, rgba(0, 0, 0, 1) 91%, rgba(0, 0, 0, 1) 100%);
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: white !important;
+	background-color: rgba(50, 50, 50, 0.9);
+}
+
+navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: rgba(1000, 1000, 1000, 0.6) !important;
+	color: white !important;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+	background-color: rgba(1000, 1000, 1000, 0.6) !important;
+	color: white !important;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: rgba(1000, 1000, 1000, 0.6) !important;
+	color: white !important;
+}
+
+.dropdown-menu>li>a {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+	color: white !important;
+}
+
+.dropdown-menu {
+	background-color: rgba(10, 10, 10, 0.6) !important;
+	color: white !important;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: white !important;
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: white !important;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+	background-color: rgba(50, 50, 50, 0.9) !important;
+}
+
+td,
+th {
+	padding: 5px;
+	border: 1px solid;
+}
+
+.listRight {
+	float: right;
+	padding: 0px;
+	padding-right: 100px;
+	margin: 0;
+	padding-top: 0px;
+}
+
+.listLeft {
+	float: left;
+	padding: 0;
+}
+
+.center {
+	margin-left: 400px;
+}
+
+.navOverlay {
+	float: left;
+	background-color: black;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+#profilePhoto {
+	width: 100%;
+	height: 100%;
+}
+
+.centerDiv {
+	text-align: center;
+}
+
+.sectionSeperate {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.dropdown-menu {
+	padding-left: 4% !important;
+}
+
+.dropdown-item {
+	padding-top 20%;
+}
+
+.caret.caret-up {
+	border-top-width: 0;
+	border-bottom: 4px solid #fff;
+}
