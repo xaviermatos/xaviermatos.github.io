@@ -26,6 +26,11 @@ header {
 
 footer {
 	text-align: center;
+    color: white !important;
+	font-family: 'Lato', sans-serif !important;
+	background-color: black !important;
+	font-family: 'Quicksand', sans-serif !important;
+	font-weight: 500
 }
 
 .navbar-default {
@@ -249,4 +254,8 @@ th {
 .caret.caret-up {
 	border-top-width: 0;
 	border-bottom: 4px solid #fff;
+}
+
+.examplePhotos {
+    width: 50%;
 }
