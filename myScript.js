@@ -49,56 +49,47 @@ var a=$(".navbar");
 
 //Allows for the anchor links to work on mobile
 //This link expains why anchor links don't work the same on mobile and how to fix it: https://codepen.io/2kool2/pen/JjYGdmZ
-const fixInPageAnchors=(_=> {
-	return;
-	'use strict'
-	const currentURL=self.location.href;
+// Add tabindex, to target, on clicking an in-page anchor
+//   - Remove tabindex on bluring the target element.
+const xxxinPageAnchors = (_ => {
+  return;
+  'use strict'
+  const currentURL = self.location.href;
 
-	const scrollAndFocus=target=> {
-		target.setAttribute('tabindex', '-1');
+  const scrollAndFocus = target => {
+    target.setAttribute('tabindex', '-1');
+    target.addEventListener('blur', _ => target.removeAttribute('tabindex'), {once: true});
+    requestAnimationFrame(_ => {
+      target.scrollIntoView();
+      target.focus({preventScroll:true});
+    });
+  };
 
-		target.addEventListener('blur', _=> target.removeAttribute('tabindex'), {
-			once: true
-		});
+  const anchorClicked = e => {
+    const a = e.target;
+    const to_id = a.hash.split('#')[1];
+    const to_obj = document.getElementById(to_id);
 
-	requestAnimationFrame(_=> {
-			target.scrollIntoView();
+    // If invalid return retaining default behaviour.
+    if (!to_obj) return;
 
-			target.focus({
-				preventScroll:true
-			});
-	});
-}
+    e.preventDefault();
+    
+    // Update the URL fragment identifier
+    // - so the back button works!
+    window.location.hash = to_id;
 
-;
+    scrollAndFocus(to_obj);
+  };
 
-const anchorClicked=e=> {
-const a=e.target;
-const toID=a.hash.split('#')[1];
-const toObj=document.getElementById(toID);
+  const anchors = document.getElementsByTagName('a');
+  for (const a of anchors) {
 
-//If the link is invalid return the default behaviour.
-if ( !toObj) return;
+    // Filter for in-page anchors only!
+    if (!a.hash) continue;
+    if (a.origin + a.pathname !== self.location.origin + self.location.pathname) continue;
 
-e.preventDefault();
-
-//Updating the URL fragment identifier to allow the back button to work
-window.location.hash=toID;
-
-scrollAndFocus(toObj);
-}
-
-;
-
-const pageAnchors=document.getElementsByTagName('a');
-
-for (const a of pageAnchors) {
-
-//Filter for the in-page anchors
-if ( !a.hash) continue;
-if (a.origin + a.pathname !==self.location.origin + self.location.pathname) continue;
-
-a.addEventListener('click', anchorClicked);
-}
+    a.addEventListener('click', anchorClicked);
+  }
 
 })();
