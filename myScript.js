@@ -46,3 +46,10 @@ this.previousTop=currentTop;
 
 var a=$(".navbar");
 //Removes the navbar when scrolling down and returns it when scrolling up.
+
+//Attempt to fix mobile anchors
+ $('a.native-anchor').bind('click', function(ev) {
+         var target = $( $(this).attr('href') ).get(0).offsetTop;
+         $.mobile.silentScroll(target);
+         return false;
+     });
