@@ -1,2 +1,2 @@
 # xaviermatos.github.io
-My professional portfolio website, built with responsive design in mind.
+My professional portfolio website, crafted with a focus on responsive design.
